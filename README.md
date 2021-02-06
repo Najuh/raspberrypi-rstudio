@@ -153,13 +153,13 @@ If you want to install and run RStudio natively on your Raspberry Pi you can do
 that too. You can extract the RStudio Server Debian package from that docker
 build image with:
 ```
-docker image save arturklauser/raspberrypi-rstudio-server-deb | tar xO --wildcards '*/layer.tar' | tar x
+docker image save balenalib/raspberrypi3-debian | tar xO --wildcards '*/layer.tar' | tar x
 ```
 This copies the `rstudio-server*.deb` package into your current directory.
 Extraction of the RStudio Desktop package `rstudio-desktop*.deb` works
 similarly with:
 ```
-docker image save arturklauser/raspberrypi-rstudio-desktop-deb | tar xO --wildcards '*/layer.tar' | tar x
+docker image save balenalib/raspberrypi3-debian | tar xO --wildcards '*/layer.tar' | tar x
 ```
 Check the [releases](https://github.com/ArturKlauser/raspberrypi-rstudio/releases)
 if you just want to download some pre-built Debian packages.
